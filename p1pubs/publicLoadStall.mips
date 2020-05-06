@@ -1,0 +1,12 @@
+	lw	1	0	op1	reg[1] <- op1
+	lw	2	0	op2	reg[2] <- op2
+	lw	3	0	op3	reg[3] <- op3
+	add	4	0	3	stall
+	add	5	1	2	no stall
+	addi	6	2	1	no stall
+done	halt
+op1	.fill	10
+op2	.fill	20
+op3	.fill	30
+op4	.fill	40
+op5	.fill	50

@@ -1,0 +1,12 @@
+	addi	2	0	1	r2 <- 1
+	addi	1	0	1	r1 <- 0	test for branch dependence(dep. to 3 instructions before)
+	addi	2	0	1	r2 <- 1
+	addi	2	0	1	r2 <- 1
+	beqz	0	1	end	if r1==0	
+	addi	2	0	1	r2 <- 1
+	addi	2	0	1	r2 <- 1
+	addi	2	0	1	r2 <- 1
+	addi	2	0	1	r2 <- 1
+	addi	2	0	1	r2 <- 1
+end	addi	2	0	1	r2 <- 1
+	halt

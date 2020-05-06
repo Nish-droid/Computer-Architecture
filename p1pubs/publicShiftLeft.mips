@@ -1,0 +1,7 @@
+	lw	1	0	op1	reg[1] <- op1
+	lw	2	0	op2	reg[2] <- op2
+	sll	1	1	2	Reg[1] <- Reg[1] << Reg[rs2]
+done	halt
+op1	.fill	3			
+op2	.fill	4
+answer	.fill	0

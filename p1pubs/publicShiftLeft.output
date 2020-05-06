@@ -1,0 +1,585 @@
+memory[0]=8c010010
+memory[1]=8c020014
+memory[2]=220804
+memory[3]=fc000000
+memory[4]=3
+memory[5]=4
+memory[6]=0
+7 memory words
+	instruction memory:
+		instrMem[ 0 ] = lw 1 0 16
+		instrMem[ 1 ] = lw 2 0 20
+		instrMem[ 2 ] = sll 1 1 2
+		instrMem[ 3 ] = halt
+		instrMem[ 4 ] = data: 3
+		instrMem[ 5 ] = sll 0 0 0
+		instrMem[ 6 ] = data: 0
+@@@
+state before cycle 0 starts
+	pc 0
+	data memory:
+		dataMem[ 0 ] -1946091504
+		dataMem[ 1 ] -1946025964
+		dataMem[ 2 ] 2230276
+		dataMem[ 3 ] -67108864
+		dataMem[ 4 ] 3
+		dataMem[ 5 ] 4
+		dataMem[ 6 ] 0
+	registers:
+		reg[ 0 ] 0
+		reg[ 1 ] 0
+		reg[ 2 ] 0
+		reg[ 3 ] 0
+		reg[ 4 ] 0
+		reg[ 5 ] 0
+		reg[ 6 ] 0
+		reg[ 7 ] 0
+		reg[ 8 ] 0
+		reg[ 9 ] 0
+		reg[ 10 ] 0
+		reg[ 11 ] 0
+		reg[ 12 ] 0
+		reg[ 13 ] 0
+		reg[ 14 ] 0
+		reg[ 15 ] 0
+		reg[ 16 ] 0
+		reg[ 17 ] 0
+		reg[ 18 ] 0
+		reg[ 19 ] 0
+		reg[ 20 ] 0
+		reg[ 21 ] 0
+		reg[ 22 ] 0
+		reg[ 23 ] 0
+		reg[ 24 ] 0
+		reg[ 25 ] 0
+		reg[ 26 ] 0
+		reg[ 27 ] 0
+		reg[ 28 ] 0
+		reg[ 29 ] 0
+		reg[ 30 ] 0
+		reg[ 31 ] 0
+	IFID:
+		instruction add 0 0 0
+		pcPlus1 0
+	IDEX:
+		instruction add 0 0 0
+		pcPlus1 0
+		readRegA 0
+		readRegB 0
+		offset 0
+	EXMEM:
+		instruction add 0 0 0
+		aluResult 0
+		readRegB 0
+	MEMWB:
+		instruction add 0 0 0
+		writeData 0
+	WBEND:
+		instruction add 0 0 0
+		writeData 0
+@@@
+state before cycle 1 starts
+	pc 4
+	data memory:
+		dataMem[ 0 ] -1946091504
+		dataMem[ 1 ] -1946025964
+		dataMem[ 2 ] 2230276
+		dataMem[ 3 ] -67108864
+		dataMem[ 4 ] 3
+		dataMem[ 5 ] 4
+		dataMem[ 6 ] 0
+	registers:
+		reg[ 0 ] 0
+		reg[ 1 ] 0
+		reg[ 2 ] 0
+		reg[ 3 ] 0
+		reg[ 4 ] 0
+		reg[ 5 ] 0
+		reg[ 6 ] 0
+		reg[ 7 ] 0
+		reg[ 8 ] 0
+		reg[ 9 ] 0
+		reg[ 10 ] 0
+		reg[ 11 ] 0
+		reg[ 12 ] 0
+		reg[ 13 ] 0
+		reg[ 14 ] 0
+		reg[ 15 ] 0
+		reg[ 16 ] 0
+		reg[ 17 ] 0
+		reg[ 18 ] 0
+		reg[ 19 ] 0
+		reg[ 20 ] 0
+		reg[ 21 ] 0
+		reg[ 22 ] 0
+		reg[ 23 ] 0
+		reg[ 24 ] 0
+		reg[ 25 ] 0
+		reg[ 26 ] 0
+		reg[ 27 ] 0
+		reg[ 28 ] 0
+		reg[ 29 ] 0
+		reg[ 30 ] 0
+		reg[ 31 ] 0
+	IFID:
+		instruction lw 1 0 16
+		pcPlus1 4
+	IDEX:
+		instruction add 0 0 0
+		pcPlus1 0
+		readRegA 0
+		readRegB 0
+		offset 32
+	EXMEM:
+		instruction add 0 0 0
+		aluResult 0
+		readRegB 0
+	MEMWB:
+		instruction add 0 0 0
+		writeData 0
+	WBEND:
+		instruction add 0 0 0
+		writeData 0
+@@@
+state before cycle 2 starts
+	pc 8
+	data memory:
+		dataMem[ 0 ] -1946091504
+		dataMem[ 1 ] -1946025964
+		dataMem[ 2 ] 2230276
+		dataMem[ 3 ] -67108864
+		dataMem[ 4 ] 3
+		dataMem[ 5 ] 4
+		dataMem[ 6 ] 0
+	registers:
+		reg[ 0 ] 0
+		reg[ 1 ] 0
+		reg[ 2 ] 0
+		reg[ 3 ] 0
+		reg[ 4 ] 0
+		reg[ 5 ] 0
+		reg[ 6 ] 0
+		reg[ 7 ] 0
+		reg[ 8 ] 0
+		reg[ 9 ] 0
+		reg[ 10 ] 0
+		reg[ 11 ] 0
+		reg[ 12 ] 0
+		reg[ 13 ] 0
+		reg[ 14 ] 0
+		reg[ 15 ] 0
+		reg[ 16 ] 0
+		reg[ 17 ] 0
+		reg[ 18 ] 0
+		reg[ 19 ] 0
+		reg[ 20 ] 0
+		reg[ 21 ] 0
+		reg[ 22 ] 0
+		reg[ 23 ] 0
+		reg[ 24 ] 0
+		reg[ 25 ] 0
+		reg[ 26 ] 0
+		reg[ 27 ] 0
+		reg[ 28 ] 0
+		reg[ 29 ] 0
+		reg[ 30 ] 0
+		reg[ 31 ] 0
+	IFID:
+		instruction lw 2 0 20
+		pcPlus1 8
+	IDEX:
+		instruction lw 1 0 16
+		pcPlus1 4
+		readRegA 0
+		readRegB 0
+		offset 16
+	EXMEM:
+		instruction add 0 0 0
+		aluResult 0
+		readRegB 0
+	MEMWB:
+		instruction add 0 0 0
+		writeData 0
+	WBEND:
+		instruction add 0 0 0
+		writeData 0
+@@@
+state before cycle 3 starts
+	pc 12
+	data memory:
+		dataMem[ 0 ] -1946091504
+		dataMem[ 1 ] -1946025964
+		dataMem[ 2 ] 2230276
+		dataMem[ 3 ] -67108864
+		dataMem[ 4 ] 3
+		dataMem[ 5 ] 4
+		dataMem[ 6 ] 0
+	registers:
+		reg[ 0 ] 0
+		reg[ 1 ] 0
+		reg[ 2 ] 0
+		reg[ 3 ] 0
+		reg[ 4 ] 0
+		reg[ 5 ] 0
+		reg[ 6 ] 0
+		reg[ 7 ] 0
+		reg[ 8 ] 0
+		reg[ 9 ] 0
+		reg[ 10 ] 0
+		reg[ 11 ] 0
+		reg[ 12 ] 0
+		reg[ 13 ] 0
+		reg[ 14 ] 0
+		reg[ 15 ] 0
+		reg[ 16 ] 0
+		reg[ 17 ] 0
+		reg[ 18 ] 0
+		reg[ 19 ] 0
+		reg[ 20 ] 0
+		reg[ 21 ] 0
+		reg[ 22 ] 0
+		reg[ 23 ] 0
+		reg[ 24 ] 0
+		reg[ 25 ] 0
+		reg[ 26 ] 0
+		reg[ 27 ] 0
+		reg[ 28 ] 0
+		reg[ 29 ] 0
+		reg[ 30 ] 0
+		reg[ 31 ] 0
+	IFID:
+		instruction sll 1 1 2
+		pcPlus1 12
+	IDEX:
+		instruction lw 2 0 20
+		pcPlus1 8
+		readRegA 0
+		readRegB 0
+		offset 20
+	EXMEM:
+		instruction lw 1 0 16
+		aluResult 16
+		readRegB 0
+	MEMWB:
+		instruction add 0 0 0
+		writeData 0
+	WBEND:
+		instruction add 0 0 0
+		writeData 0
+@@@
+state before cycle 4 starts
+	pc 12
+	data memory:
+		dataMem[ 0 ] -1946091504
+		dataMem[ 1 ] -1946025964
+		dataMem[ 2 ] 2230276
+		dataMem[ 3 ] -67108864
+		dataMem[ 4 ] 3
+		dataMem[ 5 ] 4
+		dataMem[ 6 ] 0
+	registers:
+		reg[ 0 ] 0
+		reg[ 1 ] 0
+		reg[ 2 ] 0
+		reg[ 3 ] 0
+		reg[ 4 ] 0
+		reg[ 5 ] 0
+		reg[ 6 ] 0
+		reg[ 7 ] 0
+		reg[ 8 ] 0
+		reg[ 9 ] 0
+		reg[ 10 ] 0
+		reg[ 11 ] 0
+		reg[ 12 ] 0
+		reg[ 13 ] 0
+		reg[ 14 ] 0
+		reg[ 15 ] 0
+		reg[ 16 ] 0
+		reg[ 17 ] 0
+		reg[ 18 ] 0
+		reg[ 19 ] 0
+		reg[ 20 ] 0
+		reg[ 21 ] 0
+		reg[ 22 ] 0
+		reg[ 23 ] 0
+		reg[ 24 ] 0
+		reg[ 25 ] 0
+		reg[ 26 ] 0
+		reg[ 27 ] 0
+		reg[ 28 ] 0
+		reg[ 29 ] 0
+		reg[ 30 ] 0
+		reg[ 31 ] 0
+	IFID:
+		instruction sll 1 1 2
+		pcPlus1 12
+	IDEX:
+		instruction add 0 0 0
+		pcPlus1 0
+		readRegA 0
+		readRegB 0
+		offset 32
+	EXMEM:
+		instruction lw 2 0 20
+		aluResult 20
+		readRegB 0
+	MEMWB:
+		instruction lw 1 0 16
+		writeData 3
+	WBEND:
+		instruction add 0 0 0
+		writeData 0
+@@@
+state before cycle 5 starts
+	pc 16
+	data memory:
+		dataMem[ 0 ] -1946091504
+		dataMem[ 1 ] -1946025964
+		dataMem[ 2 ] 2230276
+		dataMem[ 3 ] -67108864
+		dataMem[ 4 ] 3
+		dataMem[ 5 ] 4
+		dataMem[ 6 ] 0
+	registers:
+		reg[ 0 ] 0
+		reg[ 1 ] 3
+		reg[ 2 ] 0
+		reg[ 3 ] 0
+		reg[ 4 ] 0
+		reg[ 5 ] 0
+		reg[ 6 ] 0
+		reg[ 7 ] 0
+		reg[ 8 ] 0
+		reg[ 9 ] 0
+		reg[ 10 ] 0
+		reg[ 11 ] 0
+		reg[ 12 ] 0
+		reg[ 13 ] 0
+		reg[ 14 ] 0
+		reg[ 15 ] 0
+		reg[ 16 ] 0
+		reg[ 17 ] 0
+		reg[ 18 ] 0
+		reg[ 19 ] 0
+		reg[ 20 ] 0
+		reg[ 21 ] 0
+		reg[ 22 ] 0
+		reg[ 23 ] 0
+		reg[ 24 ] 0
+		reg[ 25 ] 0
+		reg[ 26 ] 0
+		reg[ 27 ] 0
+		reg[ 28 ] 0
+		reg[ 29 ] 0
+		reg[ 30 ] 0
+		reg[ 31 ] 0
+	IFID:
+		instruction halt
+		pcPlus1 16
+	IDEX:
+		instruction sll 1 1 2
+		pcPlus1 12
+		readRegA 0
+		readRegB 0
+		offset 2052
+	EXMEM:
+		instruction add 0 0 0
+		aluResult 0
+		readRegB 0
+	MEMWB:
+		instruction lw 2 0 20
+		writeData 4
+	WBEND:
+		instruction lw 1 0 16
+		writeData 3
+@@@
+state before cycle 6 starts
+	pc 20
+	data memory:
+		dataMem[ 0 ] -1946091504
+		dataMem[ 1 ] -1946025964
+		dataMem[ 2 ] 2230276
+		dataMem[ 3 ] -67108864
+		dataMem[ 4 ] 3
+		dataMem[ 5 ] 4
+		dataMem[ 6 ] 0
+	registers:
+		reg[ 0 ] 0
+		reg[ 1 ] 3
+		reg[ 2 ] 4
+		reg[ 3 ] 0
+		reg[ 4 ] 0
+		reg[ 5 ] 0
+		reg[ 6 ] 0
+		reg[ 7 ] 0
+		reg[ 8 ] 0
+		reg[ 9 ] 0
+		reg[ 10 ] 0
+		reg[ 11 ] 0
+		reg[ 12 ] 0
+		reg[ 13 ] 0
+		reg[ 14 ] 0
+		reg[ 15 ] 0
+		reg[ 16 ] 0
+		reg[ 17 ] 0
+		reg[ 18 ] 0
+		reg[ 19 ] 0
+		reg[ 20 ] 0
+		reg[ 21 ] 0
+		reg[ 22 ] 0
+		reg[ 23 ] 0
+		reg[ 24 ] 0
+		reg[ 25 ] 0
+		reg[ 26 ] 0
+		reg[ 27 ] 0
+		reg[ 28 ] 0
+		reg[ 29 ] 0
+		reg[ 30 ] 0
+		reg[ 31 ] 0
+	IFID:
+		instruction data: 3
+		pcPlus1 20
+	IDEX:
+		instruction halt
+		pcPlus1 16
+		readRegA 0
+		readRegB 0
+		offset 0
+	EXMEM:
+		instruction sll 1 1 2
+		aluResult 48
+		readRegB 4
+	MEMWB:
+		instruction add 0 0 0
+		writeData 0
+	WBEND:
+		instruction lw 2 0 20
+		writeData 4
+@@@
+state before cycle 7 starts
+	pc 24
+	data memory:
+		dataMem[ 0 ] -1946091504
+		dataMem[ 1 ] -1946025964
+		dataMem[ 2 ] 2230276
+		dataMem[ 3 ] -67108864
+		dataMem[ 4 ] 3
+		dataMem[ 5 ] 4
+		dataMem[ 6 ] 0
+	registers:
+		reg[ 0 ] 0
+		reg[ 1 ] 3
+		reg[ 2 ] 4
+		reg[ 3 ] 0
+		reg[ 4 ] 0
+		reg[ 5 ] 0
+		reg[ 6 ] 0
+		reg[ 7 ] 0
+		reg[ 8 ] 0
+		reg[ 9 ] 0
+		reg[ 10 ] 0
+		reg[ 11 ] 0
+		reg[ 12 ] 0
+		reg[ 13 ] 0
+		reg[ 14 ] 0
+		reg[ 15 ] 0
+		reg[ 16 ] 0
+		reg[ 17 ] 0
+		reg[ 18 ] 0
+		reg[ 19 ] 0
+		reg[ 20 ] 0
+		reg[ 21 ] 0
+		reg[ 22 ] 0
+		reg[ 23 ] 0
+		reg[ 24 ] 0
+		reg[ 25 ] 0
+		reg[ 26 ] 0
+		reg[ 27 ] 0
+		reg[ 28 ] 0
+		reg[ 29 ] 0
+		reg[ 30 ] 0
+		reg[ 31 ] 0
+	IFID:
+		instruction sll 0 0 0
+		pcPlus1 24
+	IDEX:
+		instruction data: 3
+		pcPlus1 20
+		readRegA 0
+		readRegB 0
+		offset 3
+	EXMEM:
+		instruction halt
+		aluResult 0
+		readRegB 0
+	MEMWB:
+		instruction sll 1 1 2
+		writeData 48
+	WBEND:
+		instruction add 0 0 0
+		writeData 0
+@@@
+state before cycle 8 starts
+	pc 28
+	data memory:
+		dataMem[ 0 ] -1946091504
+		dataMem[ 1 ] -1946025964
+		dataMem[ 2 ] 2230276
+		dataMem[ 3 ] -67108864
+		dataMem[ 4 ] 3
+		dataMem[ 5 ] 4
+		dataMem[ 6 ] 0
+	registers:
+		reg[ 0 ] 0
+		reg[ 1 ] 48
+		reg[ 2 ] 4
+		reg[ 3 ] 0
+		reg[ 4 ] 0
+		reg[ 5 ] 0
+		reg[ 6 ] 0
+		reg[ 7 ] 0
+		reg[ 8 ] 0
+		reg[ 9 ] 0
+		reg[ 10 ] 0
+		reg[ 11 ] 0
+		reg[ 12 ] 0
+		reg[ 13 ] 0
+		reg[ 14 ] 0
+		reg[ 15 ] 0
+		reg[ 16 ] 0
+		reg[ 17 ] 0
+		reg[ 18 ] 0
+		reg[ 19 ] 0
+		reg[ 20 ] 0
+		reg[ 21 ] 0
+		reg[ 22 ] 0
+		reg[ 23 ] 0
+		reg[ 24 ] 0
+		reg[ 25 ] 0
+		reg[ 26 ] 0
+		reg[ 27 ] 0
+		reg[ 28 ] 0
+		reg[ 29 ] 0
+		reg[ 30 ] 0
+		reg[ 31 ] 0
+	IFID:
+		instruction data: 0
+		pcPlus1 28
+	IDEX:
+		instruction sll 0 0 0
+		pcPlus1 24
+		readRegA 0
+		readRegB 0
+		offset 4
+	EXMEM:
+		instruction data: 3
+		aluResult 0
+		readRegB 0
+	MEMWB:
+		instruction halt
+		writeData 0
+	WBEND:
+		instruction sll 1 1 2
+		writeData 48
+machine halted
+total of 8 cycles executed

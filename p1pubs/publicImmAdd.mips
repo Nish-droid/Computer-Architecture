@@ -1,0 +1,3 @@
+	addi	2	2	100	Reg[2] <- Reg[2] + imm	
+done	halt
+op1	.fill	4321

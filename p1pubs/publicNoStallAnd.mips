@@ -1,0 +1,8 @@
+	lw	1	0	op1	reg[1] <- op1
+	lw	2	0	op2	reg[2] <- op2
+	lw	3	0	op3	reg[3] <- op3
+	and	4	1	2	reg[4] <- reg[1] & reg[2]
+done	halt
+op1	.fill	4323					
+op2	.fill	1212
+op3	.fill	0
