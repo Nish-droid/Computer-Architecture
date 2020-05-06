@@ -1,0 +1,7 @@
+	addi	1	0	10
+	addi	2	0	20
+	addi	3	0	30
+	addi	4	0	40
+	addi	5	0	50
+	add	6	1	2
+done	halt
